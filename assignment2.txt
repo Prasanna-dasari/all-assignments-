@@ -1,0 +1,274 @@
+Get-Alias -Definition Get-ChildItem
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           dir -> Get-ChildItem
+Alias           gci -> Get-ChildItem
+Alias           ls -> Get-ChildItem
+
+
+ 1,1,1,1,12,23,4,5,4643,5,3,3,3,3,3,3,3 | Sort-Object | Get-Unique
+>>
+>> 1
+>> 3
+>> 4
+>> 5
+>> 12
+>> 23
+>> 4643
+1
+3
+4
+5
+12
+23
+4643
+1
+3
+4
+5
+12
+23
+4643
+
+
+Get-Process winword, explorer | Format-List *
+
+
+
+Name                       : explorer
+Id                         : 7316
+PriorityClass              : Normal
+FileVersion                : 10.0.18362.1 (WinBuild.160101.0800)
+HandleCount                : 2575
+WorkingSet                 : 167534592
+PagedMemorySize            : 87564288
+PrivateMemorySize          : 87564288
+VirtualMemorySize          : 715157504
+TotalProcessorTime         : 00:05:33.1562500
+SI                         : 8
+Handles                    : 2575
+VM                         : 2204033380352
+WS                         : 167534592
+PM                         : 87564288
+NPM                        : 111304
+Path                       : C:\windows\Explorer.EXE
+Company                    : Microsoft Corporation
+CPU                        : 333.15625
+ProductVersion             : 10.0.18362.1
+Description                : Windows Explorer
+Product                    : Microsoft® Windows® Operating System
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 3444
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 131262
+MainWindowTitle            :
+MainModule                 : System.Diagnostics.ProcessModule (Explorer.EXE)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (Explorer.EXE), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule (KERNEL32.DLL),
+                             System.Diagnostics.ProcessModule (KERNELBASE.dll)...}
+NonpagedSystemMemorySize   : 111304
+NonpagedSystemMemorySize64 : 111304
+PagedMemorySize64          : 87564288
+PagedSystemMemorySize      : 1138984
+PagedSystemMemorySize64    : 1138984
+PeakPagedMemorySize        : 102023168
+PeakPagedMemorySize64      : 102023168
+PeakWorkingSet             : 185851904
+PeakWorkingSet64           : 185851904
+PeakVirtualMemorySize      : 1094320128
+PeakVirtualMemorySize64    : 2204412542976
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 87564288
+PrivilegedProcessorTime    : 00:03:53.3750000
+ProcessName                : explorer
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 8
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 28-07-2020 07:57:21
+SynchronizingObject        :
+Threads                    : {15604, 15060, 4400, 15588...}
+UserProcessorTime          : 00:01:39.7812500
+VirtualMemorySize64        : 2204033380352
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 167534592
+Site                       :
+Container                  :
+
+Name                       : WINWORD
+Id                         : 9536
+PriorityClass              : Normal
+FileVersion                : 16.0.11929.20838
+HandleCount                : 1290
+WorkingSet                 : 158920704
+PagedMemorySize            : 114364416
+PrivateMemorySize          : 114364416
+VirtualMemorySize          : 854093824
+TotalProcessorTime         : 00:00:26.4375000
+SI                         : 8
+Handles                    : 1290
+VM                         : 2204172316672
+WS                         : 158920704
+PM                         : 114364416
+NPM                        : 58448
+Path                       : C:\Program Files\Microsoft Office\Root\Office16\WINWORD.EXE
+Company                    : Microsoft Corporation
+CPU                        : 26.4375
+ProductVersion             : 16.0.11929.20838
+Description                : Microsoft Word
+Product                    : Microsoft Office
+__NounName                 : Process
+BasePriority               : 8
+ExitCode                   :
+HasExited                  : False
+ExitTime                   :
+Handle                     : 3476
+SafeHandle                 : Microsoft.Win32.SafeHandles.SafeProcessHandle
+MachineName                : .
+MainWindowHandle           : 1050910
+MainWindowTitle            : Day8_Azure.docx - Word
+MainModule                 : System.Diagnostics.ProcessModule (WINWORD.EXE)
+MaxWorkingSet              : 1413120
+MinWorkingSet              : 204800
+Modules                    : {System.Diagnostics.ProcessModule (WINWORD.EXE), System.Diagnostics.ProcessModule (ntdll.dll), System.Diagnostics.ProcessModule (verifier.dll),
+                             System.Diagnostics.ProcessModule (PayloadRestrictions.dll)...}
+NonpagedSystemMemorySize   : 58448
+NonpagedSystemMemorySize64 : 58448
+PagedMemorySize64          : 114364416
+PagedSystemMemorySize      : 1230752
+PagedSystemMemorySize64    : 1230752
+PeakPagedMemorySize        : 181239808
+PeakPagedMemorySize64      : 181239808
+PeakWorkingSet             : 169254912
+PeakWorkingSet64           : 169254912
+PeakVirtualMemorySize      : 909877248
+PeakVirtualMemorySize64    : 2204228100096
+PriorityBoostEnabled       : True
+PrivateMemorySize64        : 114364416
+PrivilegedProcessorTime    : 00:00:12.7187500
+ProcessName                : WINWORD
+ProcessorAffinity          : 255
+Responding                 : True
+SessionId                  : 8
+StartInfo                  : System.Diagnostics.ProcessStartInfo
+StartTime                  : 28-07-2020 16:28:57
+SynchronizingObject        :
+Threads                    : {1016, 3040, 8760, 17228...}
+UserProcessorTime          : 00:00:13.7187500
+VirtualMemorySize64        : 2204172316672
+EnableRaisingEvents        : False
+StandardInput              :
+StandardOutput             :
+StandardError              :
+WorkingSet64               : 158920704
+Site                       :
+Container                  :
+.
+PS C:\windows\system32> Get-Date -Format "dddd MM/dd/yyyy HH:mm K"
+Tuesday 07-28-2020 19:44 +05:30
+
+
+WRITE-HOST
+Example: PS C:\windows\system32> "This is a simple string" | Write-Host
+This is a simple string
+PS C:\windows\system32> Get-Service | Select -First 10 | Write-Host
+AarSvc_9237807
+AdtAgent
+AJRouter
+ALG
+AMD External Events Utility
+AppIDSvc
+Appinfo
+AppMgmt
+AppReadiness
+AppVClient
+
+
+
+1.work on different variables?
+A Python variable is a reserved memory location to store values. In other words, a variable in a python
+ program gives data to the computer for processing.
+Every value in Python has a datatype. Different data types in Python are Numbers, 
+List, Tuple, Strings, Dictionary, etc. Variables can be declared by any name
+ or even alphabets like a, aa, abc, etc.
+
+
+2.work string concatenation?
+var1 = "Welcome"
+var2 = "python"
+print(var1) 
+print(var2) 
+
+
+3.write a program of simple calculator?
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    return x / y
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+        choice = input("Enter choice(1/2/3/4): ")
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        break
+    else:
+        print("Invalid Input")
+
+4.find the available datatypes in python?
+Python has five standard data types −
+Numbers
+String
+List
+Tuple
+Dictionary
+
+5.string functions?
+Strings in python are surrounded by either single quotation marks, or double quotation marks.
+'hello' is the same as "hello".You can display a string literal with the print() function.
+
+example:a = """python is a object oriented and
+high level programming language.It is very easy when
+compared with other languages."""
+print(a)
+
+
+6.functions in python?
+A function is a block of code which only runs when it is called.You can pass data into a function.
+A function can return data as a result.
+example:def my_function():
+  print("Hello from a function")
+  my_function()   
+

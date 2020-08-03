@@ -1,0 +1,99 @@
+#Node.js - Buffers
+
+Node provides Buffer class which provides instances to store raw data similar to an array of integers but
+ corresponds to a raw memory allocation outside.Buffer class is a global class that can be 
+accessed in an application without importing the buffer module.
+Creating Buffers
+creating abuffer to an array  : var buf = new Buffer([10, 20, 30, 40, 50]);
+
+create a Buffer from a given string
+var buf = new Buffer("Node Js is easy to learn", "utf8");
+
+Write Buffers
+buf = new Buffer(256);
+len = buf.write("Easy Learning");
+
+console.log("write : "+  len);
+
+#returning value
+buf = new Buffer(26);
+for (var i = 0 ; i < 26 ; i++) {
+  buf[i] = i + 97;
+}
+
+console.log( buf.toString('ascii'));      
+console.log( buf.toString('ascii',0,5));   
+console.log( buf.toString('utf8',0,5));    
+console.log( buf.toString(undefined,0,5));
+
+
+##Convert Buffer to JSON
+
+var buf = new Buffer('Simply Easy Learning');
+var json = buf.toJSON(buf);
+console.log(json);
+
+#Node.js NPM
+NPM:NPM is a package manager for Node.js packages, or modules
+package:A package in Node.js contains all the files you need for a module.
+Modules are JavaScript libraries you can include in your project.
+#hello world program#
+var http = require('http');
+var uc = require('upper-case');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write(uc.upperCase("Hello World!"));
+  res.end();
+}).listen(8080);
+
+#Asynchronous working in nodejs
+JavaScript is asynchronous in nature and so is Node. Asynchronous programming is a design 2
+pattern which ensures the non-blocking code execution.
+Non blocking code do not prevent the execution of piece of code. In general if we execute
+ in Synchronous manner i.e one after another we unnecessarily stop the execution of those 
+code which is not depended on the one you are executing.
+Asynchronous does exactly opposite, asynchronous code executes without having any dependency and no order. 
+This improves the system efficiency and throughput.
+Asynchronous programming is great for faster execution of programs but it comes with price. 
+That’s right, its difficult to program and most of the time we end up having callback hell scenario
+example:
+var fs = require("fs");
+fs.readFile('sync.js','utf8',function(err,data){
+    if(!err) {
+       console.log(data);
+    }
+});
+console.log("something else");
+
+#synchronous in NPM
+ar Sync = require('sync');
+ 
+function asyncFunction(a, b, callback) {
+    process.nextTick(function(){
+        callback('something went wrong');
+    })
+}
+ 
+// Run in a fiber
+Sync(function(){
+ 
+    try {
+        var result = asyncFunction.sync(null, 2, 3);
+    }
+    catch (e) {
+        console.error(e); // something went wrong
+    }
+})
+ 
+Sync(function(){
+    
+    var result = asyncFunction.sync(null, 2, 3);
+    return result;
+    
+}, function(err, result){ 
+    
+    if (err) console.error(err); 
+    console.log(result);
+})
+
+#
